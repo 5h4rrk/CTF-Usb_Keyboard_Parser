@@ -26,7 +26,7 @@ def keystroke_decoder(filepath,data):
                 modifier +=1
                 continue   
             for j in range(1):
-                count +=1 
+                count +=1
                 m  = "0x" + buffer[4:6].upper()
                 if m in usb_codes and m == "0x2A": message.pop(len(message)-1)
                 elif m in usb_codes : message.append(usb_codes.get(m)[0])
